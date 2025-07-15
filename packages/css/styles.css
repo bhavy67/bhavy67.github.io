@@ -5,10 +5,17 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
+<<<<<<< HEAD
   --hue-color: 122; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(128, 52%, 49%);
+=======
+  --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+  /* HSL color mode */
+  --first-color: hsl(207, 52%, 49%);
+>>>>>>> 05ffce7971630c2e2727a3119edc29726f0f6d3c
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
