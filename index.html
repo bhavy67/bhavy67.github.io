@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavy Ladani - Portfolio</title>
+    <meta name="description"
+        content="Professional portfolio of Bhavy Ladani - Software Developer with 3+ years of experience">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="images/favicon-32x32.svg">
+    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Bhavy Ladani</a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Bhavy Ladani</span>
+                </h1>
+                <h2 class="hero-subtitle">Software Developer</h2>
+                <p class="hero-description">
+                    Passionate Software Developer with 3+ years of experience creating innovative solutions
+                    and building scalable applications. I love turning complex problems into simple,
+                    beautiful, and intuitive designs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="resume/my_resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/bhavyladani" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/bhavy67" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/bhavyladani" target="_blank" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://bhavycodes.hashnode.dev" target="_blank" aria-label="Hashnode Blog">
+                        <i class="fab fa-hashnode"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="code-body">
+                                <div class="code-line">
+                                    <span class="keyword">const</span>
+                                    <span class="variable">developer</span>
+                                    <span class="operator">=</span> {
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">name</span>:
+                                    <span class="string">'Bhavy Ladani'</span>,
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">role</span>:
+                                    <span class="string">'Software Developer'</span>,
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="property">experience</span>:
+                                    <span class="number">3</span>,
+                                </div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Software Developer with 3+ years of hands-on experience in creating
+                        robust, scalable applications. My journey in software development has been driven by
+                        curiosity and a constant desire to learn and grow.
+                    </p>
+                    <p>
+                        I specialize in full-stack development, with expertise in modern web technologies.
+                        I enjoy solving complex problems and turning ideas into reality through clean,
+                        efficient code. When I'm not coding, you can find me exploring new technologies,
+                        contributing to open-source projects, or writing technical blogs.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2024 - Present</div>
+                        <h3>Software Developer 2</h3>
+                        <h4>Anblicks Inc.</h4>
+                        <p>
+                            Led development of scalable web applications using React and Node.js.
+                            Collaborated with cross-functional teams to deliver high-quality software solutions.
+                            Mentored junior developers and implemented best practices.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>React.js</span>
+                            <span>Angular</span>
+                            <span>ExtJS</span>
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 2022 - May 2024</div>
+                        <h3>Junior Software Developer</h3>
+                        <h4>Weboccult Technologies</h4>
+                        <p>
+                            Developed and maintained web applications using modern JavaScript frameworks.
+                            Designed and implemented RESTful APIs and worked with various databases.
+                            Improved application performance and user experience.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>React.js</span>
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2022 - August 2022</div>
+                        <h3>Web Developer Intern</h3>
+                        <h4>Codeflash Infotech</h4>
+                        <p>
+                            Built responsive web interfaces and contributed to feature development.
+                            Learned modern development practices and worked in an agile environment.
+                            Participated in code reviews and testing processes.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Git</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>B.Tech in Computer Engineering</h3>
+                    <h4>Gujarat Technological University</h4>
+                    <div class="education-year">2019 - 2023</div>
+                    <p>
+                        Focused on software engineering, algorithms, and data structures.
+                        Participated in programming competitions and technical projects.
+                    </p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Full Stack Web Development</h3>
+                    <h4>Online Certification</h4>
+                    <div class="education-year">2020</div>
+                    <p>
+                        Comprehensive course covering modern web development technologies
+                        including React, Node.js, and database management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level" data-level="92"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level" data-level="82"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-level" data-level="78"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-level" data-level="70"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>TypeScript</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <span>REST APIs</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Klimate-App-Banner-Image.png" alt="Task Management App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bhavy67/klimate" target="_blank" aria-label="View GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://klimate-bhavy.vercel.app/" target="_blank" aria-label="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Klimate App</h3>
+                        <p>
+                            A real-time weather app with location-based forecasts,
+                            historical weather data.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>TypeScript</span>
+                            <span>Tanstack</span>
+                            <span>Shadcn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Finance-Tracker-Banner-Image.png" alt="E-commerce Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bhavy67/finance-tracker" target="_blank"
+                                    aria-label="View GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://bhavy67.github.io/finance-tracker/" target="_blank"
+                                    aria-label="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Finance Tracker</h3>
+                        <p>
+                            A full-stack finance tracking application that allows users to manage their expenses,
+                            track their spending patterns, and visualize their financial health.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Signature-Banner-Image.png" alt="Weather Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/bhavy67/signature" target="_blank" aria-label="View GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://signature-bhavy.vercel.app/" target="_blank"
+                                    aria-label="View Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Signature App</h3>
+                        <p>
+                            Users can draw their signature and customize it with options like text color, background
+                            color, font size, and more. It also includes options to download, clear, and undo
+                            signatures.
+                        </p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Canvas</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects.
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>`
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>bhavy.ladani6701@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8780822212</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ahmedabad, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Bhavy Ladani. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/bhavyladani" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/bhavy67" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/bhavyladani" target="_blank" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://bhavycodes.hashnode.dev/" target="_blank" aria-label="Hashnode Blog">
+                        <i class="fab fa-hashnode"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
