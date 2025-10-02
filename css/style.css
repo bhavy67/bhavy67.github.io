@@ -683,61 +683,115 @@ ul {
   background: var(--bg-secondary);
 }
 
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--space-2xl);
-  max-width: 900px;
+.education-timeline {
+  max-width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
-.education-card {
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gradient-primary);
+}
+
+.education-timeline .timeline-item {
+  position: relative;
+  margin-bottom: var(--space-3xl);
+  padding-left: 80px;
+}
+
+.education-timeline .timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-timeline .timeline-dot {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  border: 4px solid var(--bg-secondary);
+  box-shadow: 0 0 0 4px var(--secondary-color);
+}
+
+.education-timeline .timeline-content {
   background: var(--bg-card);
-  padding: var(--space-2xl);
+  padding: var(--space-xl);
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--border-color);
-  text-align: center;
+  position: relative;
   transition: var(--transition);
 }
 
-.education-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px var(--shadow-medium);
+.education-timeline .timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px var(--shadow-medium);
 }
 
-.education-icon {
-  width: 80px;
-  height: 80px;
-  background: var(--gradient-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto var(--space-lg);
-  font-size: var(--font-size-2xl);
-  color: white;
+.education-timeline .timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--bg-card);
 }
 
-.education-card h3 {
-  font-size: var(--font-size-xl);
+.education-timeline .timeline-date {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
   margin-bottom: var(--space-sm);
 }
 
-.education-card h4 {
-  color: var(--secondary-color);
+.education-timeline .timeline-content h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.education-timeline .timeline-content h4 {
+  color: var(--primary-color);
   margin-bottom: var(--space-md);
   font-weight: 500;
 }
 
-.education-year {
-  color: var(--primary-color);
-  font-weight: 600;
+.education-timeline .timeline-content p {
+  color: var(--text-secondary);
+  line-height: 1.7;
   margin-bottom: var(--space-lg);
 }
 
-.education-card p {
-  color: var(--text-secondary);
-  line-height: 1.7;
+.education-timeline .timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.education-timeline .timeline-skills span {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+/* Hide old education styles */
+.education-grid,
+.education-card,
+.education-icon {
+  display: none;
 }
 
 /* ==================== */
@@ -1311,15 +1365,18 @@ ul {
     grid-template-columns: 1fr;
   }
   
-  .timeline::before {
+  .timeline::before,
+  .education-timeline::before {
     left: 15px;
   }
   
-  .timeline-item {
+  .timeline-item,
+  .education-timeline .timeline-item {
     padding-left: 50px;
   }
   
-  .timeline-dot {
+  .timeline-dot,
+  .education-timeline .timeline-dot {
     left: 5px;
   }
 }
@@ -1373,8 +1430,14 @@ ul {
     grid-template-columns: 1fr;
   }
   
-  .timeline {
+  .timeline,
+  .education-timeline {
     margin-left: var(--space-lg);
+  }
+  
+  .timeline-content::before,
+  .education-timeline .timeline-content::before {
+    display: none;
   }
   
   .footer-content {
@@ -1407,12 +1470,12 @@ ul {
   
   .projects-grid,
   .blog-grid,
-  .skills-grid,
-  .education-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
   
-  .timeline-content::before {
+  .timeline-content::before,
+  .education-timeline .timeline-content::before {
     display: none;
   }
   
